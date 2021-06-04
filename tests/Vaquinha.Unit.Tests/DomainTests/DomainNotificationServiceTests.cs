@@ -27,7 +27,7 @@ namespace Vaquinha.Unit.Tests.DomainTests
             var domainNotification = new DomainNotificationService();
 
             // Assert
-            domainNotification.PossuiErros.Should().BeFalse(because:"ainda não foi adicionado nenhuma notificadao de dominino");
+            domainNotification.PossuiErros.Should().BeFalse(because:"ainda não foi adicionado nenhuma notificacao de dominino");
         }
         
         [Trait("DomainNotificationService", "DomainNotificationService_AdicionarNotificacao_HasNotificationsTrue")]

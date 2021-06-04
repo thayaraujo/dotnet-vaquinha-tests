@@ -34,7 +34,7 @@ namespace Vaquinha.Domain.Entities
         public Pessoa DadosPessoais { get; private set; }
         public Endereco EnderecoCobranca { get; private set; }
         public CartaoCredito FormaPagamento { get; private set; }
-
+        
         public void AtualizarDataCompra()
         {
             DataHora = DateTime.Now;
@@ -51,7 +51,7 @@ namespace Vaquinha.Domain.Entities
         public void AdicionarFormaPagamento(CartaoCredito formaPagamento) {
             FormaPagamento = formaPagamento;
         }
-
+         
         public override bool Valido()
         {
             ValidationResult = new DoacaoValidacao().Validate(this);

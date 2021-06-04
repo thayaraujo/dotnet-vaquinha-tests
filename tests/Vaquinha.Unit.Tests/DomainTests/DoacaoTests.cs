@@ -119,7 +119,7 @@ namespace Vaquinha.Unit.Tests.DomainTests
 
             // Assert
             valido.Should().BeFalse(because: "O campo Mensagem de Apoio possui mais caracteres do que o permitido");
-            doacao.ErrorMessages.Should().HaveCount(1, because: "somente o campo Mensagem deApoio está inválido.");
+            doacao.ErrorMessages.Should().HaveCount(1, because: "somente o campo Mensagem de Apoio está inválido.");
             doacao.ErrorMessages.Should().Contain("O campo Mensagem de Apoio deve possuir no máximo 500 caracteres.");
         }
 
